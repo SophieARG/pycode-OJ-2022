@@ -2,6 +2,8 @@ import requests, time
 from bs4 import BeautifulSoup
 
 MAXTRY = 100
+GROUPNAME = 'phyic'
+TITLE = '2022b01'
 
 now = time.strftime('%Y%m%d%H%M%S')
 log = open('log%s.txt' % now, 'w')
@@ -14,14 +16,15 @@ headers = {
 page = 0
 while page < MAXTRY:
     page += 1
-    url = "http://phyic.openjudge.cn/2022b0/ranking/?page=%d" % page
+    url = f"http://{GROUPNAME}.openjudge.cn/{TITLE}/ranking/?page={page}"
     resp = requests.get(url, headers=headers)
     bs = BeautifulSoup(resp.text, 'lxml')
     log.write(bs.prettify())
     for tr in bs.find_all('tr')[1:]:
         tddata = []
         for td in tr.find_all(name='td'):
-            tddata.append(td.text)
+            _td = td.text.strip()
+            tddata.append(_td if _td else 'None')
         res.write(' '.join(tddata) + '\n')
     if bs.find(name='a', class_='nextprev', rel='next') is None:
         page = MAXTRY
