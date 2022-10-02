@@ -27,6 +27,6 @@ else:
                     while p2 > p1 and nums[p2] == temp:
                         p2 -= 1
             temp = nums[p]
-            while p < n-2 and nums[p] == temp:
+            while p < n - 2 and nums[p] == temp:
                 p += 1
         print(count)
