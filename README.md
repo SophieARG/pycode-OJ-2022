@@ -8,5 +8,6 @@ Sample code provided for [OJ](http://phyic.openjudge.cn) questions of PKU 2022 I
   
 - 2022.9.18 sample code for 0th homework.
 - 2022.9.27 sample code for 2021 final exam.
+- 2022.10.8 sample code for 1st homework.
 
 </details>
