@@ -12,4 +12,6 @@ student-id3 student-name3
 ...
 ~~~
 
-生成的`scores.csv`即为成绩统计文件。
+运行`getHW.py`生成的`scores.csv`即为成绩统计文件。
+
+再运行`analyze.py`可以分析成绩情况（未完成）。
