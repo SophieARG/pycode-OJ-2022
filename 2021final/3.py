@@ -13,10 +13,10 @@ def legalyear(year):
     m = int(date[-4: -2])
     d = int(date[-2:])
     if 1 <= m <= 12:
-        if m in [1, 3, 5, 7, 8, 10, 12]:
+        if m in (1, 3, 5, 7, 8, 10, 12):
             if 1 <= d <= 31:
                 return date
-        elif m in [4, 6, 9, 11]:
+        elif m in (4, 6, 9, 11):
             if 1 <= d <= 30:
                 return date
         else:
