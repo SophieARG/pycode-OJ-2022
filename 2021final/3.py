@@ -30,10 +30,10 @@ def legalyear(year):
     
 date = input()
 res = []
-for i in range(1000, int(date[: 4]) + 1):
+for i in range(1000, int(date[: 4])):
     legal = legalyear(i)
     if legal:
         res.append(legal)
-if int(res[-1]) > int(date):
-    res.pop()
+if date[::-1] == date:
+    res.append(date)
 print(' '.join(res))
