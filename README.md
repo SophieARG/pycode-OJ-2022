@@ -12,5 +12,6 @@ Sample code provided for [OJ](http://phyic.openjudge.cn) questions of PKU 2022 I
 - 2022.10.12 sample code for 2nd homework.
 - 2022.10.18 sample code for 3rd homework.
 - 2022.10.29 sample code for 4th homework.
+- 2022.11.16 sample code for 5th homework.
 
 </details>
