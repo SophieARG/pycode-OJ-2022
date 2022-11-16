@@ -3,7 +3,7 @@ row = [set(range(1, 10)) for i in range(9)]
 col = [set(range(1, 10)) for i in range(9)]
 block = [set(range(1, 10)) for i in range(9)]
 for i in range(9):
-    ci = input().split()
+    ci = input()
     for j in range(9):
         if ci[j] != '0':
             cij = int(ci[j])
@@ -35,4 +35,4 @@ def solve():
     sodoku[besti][bestj] = 0
     return False
 solve()
-for line in sodoku: print(*line)
+for line in sodoku: print(*line, sep='')
