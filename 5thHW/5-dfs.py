@@ -11,6 +11,7 @@ for i in range(9):
             row[i].remove(cij)
             col[j].remove(cij)
             block[i // 3 + j // 3 * 3].remove(cij)
+            
 def solve():
     minv = 10
     besti = bestj = bestp = None
@@ -34,5 +35,6 @@ def solve():
         block[b].add(p)
     sodoku[besti][bestj] = 0
     return False
+
 solve()
 for line in sodoku: print(*line, sep='')
