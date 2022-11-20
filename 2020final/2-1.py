@@ -7,4 +7,3 @@ while True:
     else:
         break
 print(res)
-    
